@@ -1,0 +1,20 @@
+/* Import fonts for headings and body text */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Open+Sans&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: darkblue;
+    margin: 10px 50px;  /* Top & Bottom: 10px, Left & Right: 50px */
+    background-color: ivory;
+}
+
+/* Headings use Oswald font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Make images inline with text */
+img {
+    vertical-align: middle;
+}
