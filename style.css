@@ -18,13 +18,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Ensure section titles are displayed */
 h1 {
     font-size: 28px;
-    text-align: center;
+    text-align: left; /* Align left */
 }
 
 h2 {
     font-size: 22px;
     margin-top: 20px;
-    text-align: center;
+    text-align: left; /* Align left */
     display: block;
     width: 100%;
 }
@@ -34,8 +34,8 @@ img {
     vertical-align: middle;
 }
 
-/* Style the navigation bar */
-ul {
+/* Style navigation bar while avoiding bullet removal from other lists */
+ul.nav {
     display: flex;
     list-style: none;
     padding: 0;
@@ -44,11 +44,12 @@ ul {
     gap: 30px;
 }
 
-ul li {
+/* Style navigation links */
+ul.nav li {
     display: inline;
 }
 
-ul li a {
+ul.nav li a {
     color: darkblue;
     text-decoration: underline;
     font-size: 18px;
@@ -59,24 +60,17 @@ ul li a {
 #introduction {
     width: 100%;
     margin-bottom: 20px;
+    text-align: left; /* Align left */
 }
 
-/* Style the browser sections as three equal columns, centered and touching */
-.browser-container {
-    display: flex;
-    justify-content: center; /* Center all sections */
-    gap: 0px; /* Remove spacing so sections touch */
-    margin-top: 20px;
-}
-
-/* Remove white background boxes */
-.browser-section {
-    width: 300px;
-    padding: 0;
-    text-align: left;
-    box-shadow: none;
-    border-radius: 0;
-    background: none;
+/* Style the browser list with bullet points */
+ul.browser-list {
+    display: block; /* Reset flex behavior */
+    list-style-type: disc; /* Add bullet points */
+    margin-left: 20px; /* Indent the list */
+    text-align: left; /* Align text to the left */
+    font-size: 16px; /* Set font size */
+    padding-left: 40px; /* Extra padding for better visibility */
 }
 
 /* Ensure titles span full section width */
@@ -88,3 +82,4 @@ ul li a {
     width: 100%;
     background-color: ivory; /* Ensure it blends in */
 }
+
