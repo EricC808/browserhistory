@@ -1,85 +1,13 @@
-/* Import fonts for headings and body text */
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Open+Sans&display=swap');
-
-/* Global styles */
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: darkblue;
-    margin: 10px 50px;  /* Top & Bottom: 10px, Left & Right: 50px */
-    background-color: ivory;
-    text-align: center; /* Center align content */
+.nav-link {
+    color: white !important;
 }
 
-/* Headings use Oswald font */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
+img.img-fluid {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
 
-/* Ensure section titles are displayed */
-h1 {
-    font-size: 28px;
-    text-align: left; /* Align left */
+h1, h2 {
+    color: #040093;
 }
-
-h2 {
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left; /* Align left */
-    display: block;
-    width: 100%;
-}
-
-/* Make images inline with text */
-img {
-    vertical-align: middle;
-}
-
-/* Style navigation bar while avoiding bullet removal from other lists */
-ul.nav {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    gap: 30px;
-}
-
-/* Style navigation links */
-ul.nav li {
-    display: inline;
-}
-
-ul.nav li a {
-    color: darkblue;
-    text-decoration: underline;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Ensure the introduction section remains full-width */
-#introduction {
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: left; /* Align left */
-}
-
-/* Style the browser list with bullet points */
-ul.browser-list {
-    display: block; /* Reset flex behavior */
-    list-style-type: disc; /* Add bullet points */
-    margin-left: 20px; /* Indent the list */
-    text-align: left; /* Align text to the left */
-    font-size: 16px; /* Set font size */
-    padding-left: 40px; /* Extra padding for better visibility */
-}
-
-/* Ensure titles span full section width */
-.browser-section h2 {
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    display: block;
-    width: 100%;
-    background-color: ivory; /* Ensure it blends in */
-}
-
